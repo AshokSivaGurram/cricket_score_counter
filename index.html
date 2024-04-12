@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+    <div class="container">
+        <div class="csk">
+            <h1>CSK</h1>
+            <div class="score">
+                <h2 id="csk-score">0</h2>
+                <h2>/</h2>
+                <h2 id="csk-wicket">0</h2>
+                <h2>(</h2>
+                <h2 id="csk-over">0</h2>
+                <h2>.</h2>
+                <h2 id="csk-ball">0</h2>
+                <h2>)</h2>
+            </div>
+            <div class="score-adder">
+                <button class="btn-csk" onclick="csk1()">+1</button>
+                <button class="btn-csk" onclick="csk2()">+2</button>
+                <button class="btn-csk" onclick="csk4()">+4</button>
+                <button class="btn-csk" onclick="csk6()">+6</button>
+            </div>
+            <div class="wicket">
+                <button class="btn-csk" onclick="cskwide()">wd</button>
+                <button class="wicket-csk" onclick="cskWicket()">wicket</button>
+            </div>
+            <p id="innings-csk"></p>
+        </div>
+        <div class="rcb">
+            <h1>RCB</h1>
+            <div class="score">
+                <h2 id="rcb-score">0</h2>
+                <h2>/</h2>
+                <h2 id="rcb-wicket">0</h2>
+                <h2>(</h2>
+                <h2 id="rcb-over">0</h2>
+                <h2>.</h2>
+                <h2 id="rcb-ball">0</h2>
+                <h2>)</h2>
+            </div>
+            <div class="score-adder">
+                <button class="btn-rcb" onclick="rcb1()">+1</button>
+                <button class="btn-rcb" onclick="rcb2()">+2</button>
+                <button class="btn-rcb" onclick="rcb4()">+4</button>
+                <button class="btn-rcb" onclick="rcb6()">+6</button>
+            </div>
+            <div class="wicket">
+                <button class="btn-rcb" onclick="rcbwide()">wd</button>
+                <button class="wicket-rcb" onclick="rcbWicket()">wicket</button>
+            </div>
+            <p id="innings-rcb"></p>
+        </div>
+    </div>
+    </div>
+    <button class="results" onclick="results()" >Get Results</button>
+    <p class="results-display" id="results"></p>
+    <script src="index.js"></script>
+</body>
+</html>
